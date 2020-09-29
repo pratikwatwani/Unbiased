@@ -1,4 +1,4 @@
-# Event-Based-Influence-on-Wikipedia
+# Spatio Temporal Event Based Influence on Wikipedia Edits
 | <img src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-right="300"> | <img src="https://maelfabien.github.io/assets/images/header.jpg" width="350">|
 | ------------- | ------------- |
 

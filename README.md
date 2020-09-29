@@ -26,4 +26,4 @@
 
 
 
-<br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners including but not limited to Wikipedia Foundation, GDELT Project, AWS.</h6>
+<br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

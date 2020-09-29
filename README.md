@@ -23,3 +23,7 @@
 | AWS S3  | Raw Data Storage | -                                                |
 | AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 3 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x m5a.large                                    |
+
+
+
+&copy; All product names, logos, and brands are property of their respective owners including but not limited to Wikipedia Foundation, GDELT Project, AWS.

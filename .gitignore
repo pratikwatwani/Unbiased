@@ -1,0 +1,7 @@
+# hidden files
+.DS_Store
+
+#config files
+config.ini
+
+#folders

@@ -22,7 +22,7 @@
 |---------|------------------|--------------------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
 | AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 3 x m5a.large |
-| AWS EC2 | TimescaleDB      | 1 x m5a.large                                    |
+| AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 
 
 

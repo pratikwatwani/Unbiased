@@ -24,6 +24,13 @@
 | AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 3 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 
+## Challenges
+### Data
+1. Handling compressed files
+2. Semi-Structured Data (XML)
 
+## Engineering
+1. Database memory optimization
+2. Joining data
 
 <br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

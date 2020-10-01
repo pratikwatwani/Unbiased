@@ -28,4 +28,8 @@
 1. Database memory optimization
 2. Joining data
 
+## Architectural 
+1. Storage - Processing Cluster - Database Cluster connection
+
+
 <br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

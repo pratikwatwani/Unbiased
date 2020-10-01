@@ -4,15 +4,10 @@
 
 ## Motivation
 ## Data
-1. GDELT, Global Database of Events, Language, and Tone<br/>
-   Location: Public S3<br/>
-   Size: <b>6+ TB</b><br/>
-   Update interval: 15 minutes<br/>
-
-2. Wikipedia Metadata<br/>
-   Location: Private S3<br/>
-   Size: <b>~500 GB</b> <br/>
-   Update Interval: Varies<br/>
+| Type | Source                                               | Size    | Update Frequency | Location   |
+|------|------------------------------------------------------|---------|------------------|------------|
+|  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/structured%20data.png" width="80" margin-right="80">    | GDELT, Global Database of Events, Language, and Tone |   <b>6+ TB</b>  |    15 minutes    |  Public S3 |
+|  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/unstructured%20data.png" width="80" height='90' margin-right="80">     | Wikipedia Metadata                                   | <b>~500 GB</b> |      Varies      | Private S3 |
 
 ## Pipeline Architecture
 <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>

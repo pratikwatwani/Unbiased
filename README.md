@@ -9,6 +9,10 @@
 |  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/structured%20data.png" width="80" margin-right="80">    | GDELT, Global Database of Events, Language, and Tone |   <b>6+ TB</b>  |    15 minutes    |  Public S3 |
 |  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/unstructured%20data.png" width="80" height='90' margin-right="80">     | Wikipedia Metadata                                   | <b>~500 GB</b> |      Varies      | Private S3 |
 
+</br><b>GDELT:</b></br>
+The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.</br>
+</br><b>Wikipedia Metadata:</b></br>
+Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article.</br>
 ## Pipeline Architecture
 <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>
 
@@ -16,7 +20,7 @@
 | Entity  | Purpose          | Type                                             |
 |---------|------------------|--------------------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
-| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 3 x m5a.large |
+| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 4 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 
 ## Challenges

@@ -31,9 +31,32 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 ## Engineering
 1. Database memory optimization
 2. Joining data
+3. Distributed database design with Chunking
 
 ## Architectural 
 1. Storage - Processing Cluster - Database Cluster connection
 
+## Directory Structure
+```bash
+
+│  src
+│   │ 
+│   ├── scraper
+│   │     ├── scraper.py
+│   │     ├── lists
+│   │           ├── current_urls.txt
+│   │           ├── historic_urls.txt
+│   │     ├── runScrapper.sh
+│   ├── dataingestion
+│   │     ├── ingester.py
+│   │     ├── runIngester.sh
+│   ├── processor
+│   ├── 
+│   │   ├── 
+│   └── 
+├── 
+├── README.md
+└── .gitignore
+```
 
 <br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

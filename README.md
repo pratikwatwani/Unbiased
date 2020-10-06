@@ -23,24 +23,25 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>
 
 ## Architectural Components
-| Entity  | Purpose          | Type                                             |
-|---------|------------------|--------------------------------------------------|
+| Entity  | Purpose          | Type                                             |Reason                                   |
+|---------|------------------|--------------------------------------------------|-----------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
 | AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 4 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 | AWS EC2 | Web App          | 1 x t3.large                                     |
+| AWS EC2 | Airflow Scheduler| 1 x t3.large                                     |
 
 ## Challenges
 ### Data
 1. Handling compressed files
 2. Semi-Structured Data (XML)
 
-## Engineering
+### Engineering
 1. Database memory optimization
 2. Joining data
 3. Distributed database design with Chunking
 
-## Architectural 
+### Architectural 
 1. Storage - Processing Cluster - Database Cluster connection
 
 ## Directory Structure
@@ -65,5 +66,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 ├── README.md
 └── .gitignore
 ```
+
+## Instructions
 
 <br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

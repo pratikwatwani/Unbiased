@@ -69,4 +69,8 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 
 ## Instructions
 
+## License
+
+This project is licensed under the AGPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+
 <br/><br/><h6>&copy; All product names, logos, and brands are property of their respective owners.</h6>

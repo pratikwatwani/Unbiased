@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="300" height="300" margin-right=500px></p>
+<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></p>
 
 # <h1 align="center">Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
 

@@ -3,6 +3,12 @@
 # <h1 align="center">Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
 
 ## Motivation
+Every day there are thousands of notable transactions over the globe; protests, market dips, terrorist attacks, etc. 
+
+The question is, <b>Do global events lead to influence in edits of Wikipedia articles?</b>
+
+PRAXEOLOGY POLARIZATION is a tool to serve moderators and researchers to leverage open data to understand and further research patterns in Wikipedia edits contribution. 
+
 ## Data
 | Type | Source                                               | Size    | Update Frequency | Location   |
 |------|------------------------------------------------------|---------|------------------|------------|

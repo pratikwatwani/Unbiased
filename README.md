@@ -1,15 +1,15 @@
 <p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></p>
 
-# <h1 align="center">Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
+# <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
 
-## Motivation
+## Motivation🚀 
 Every day there are thousands of notable transactions over the globe; protests, market dips, terrorist attacks, etc. 
 
 The question is, <b>Do global events lead to influence in edits of Wikipedia articles?</b>
 
 PRAXEOLOGY POLARIZATION is a tool to serve moderators and researchers to leverage open data to understand and further research patterns in Wikipedia edits contribution. 
 
-## Data
+## Data🪣
 | Type | Source                                               | Size    | Update Frequency | Location   |
 |------|------------------------------------------------------|---------|------------------|------------|
 |  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/structured%20data.png" width="80" margin-right="80">    | GDELT, Global Database of Events, Language, and Tone |   <b>6+ TB</b>  |    15 minutes    |  Public S3 |
@@ -19,10 +19,10 @@ PRAXEOLOGY POLARIZATION is a tool to serve moderators and researchers to leverag
 The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.</br>
 </br><b>Wikipedia Metadata:</b></br><img src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-right="300"></br>
 Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article.</br>
-## Pipeline Architecture
+## Pipeline Architecture🔗
 <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>
 
-## Architectural Components
+## Architectural Components🗜️
 | Entity  | Purpose          | Type                                             |Reason                                   |
 |---------|------------------|--------------------------------------------------|-----------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
@@ -33,7 +33,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 | AWS EC2 | Decompressor     | 1 x t3.large                                     |
 
 
-## Challenges
+## Challenges🤕
 ### Data
 1. Handling compressed files
 2. Semi-Structured Data (XML)
@@ -46,7 +46,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 ### Architectural 
 1. Storage - Processing Cluster - Database Cluster connection
 
-## Directory Structure
+## Directory Structure🗂️
 ```bash
 
 │  src
@@ -69,16 +69,16 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 └── .gitignore
 ```
 
-## Instructions
+## Instructions📝
 
-## Optimizations
+## Optimizations⚙️
 1. Pigz
 2. Serializer
 3. Oversubscription
 4. Partitions
 5. Spark-Submit command
 
-## License
+## License🔑
 
 This project is licensed under the AGPL-3.0 License - see the [LICENSE.md](LICENSE.md) file for details
 

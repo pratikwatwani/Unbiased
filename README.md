@@ -26,10 +26,12 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 | Entity  | Purpose          | Type                                             |Reason                                   |
 |---------|------------------|--------------------------------------------------|-----------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
-| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 4 x m5a.large |
+| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 | AWS EC2 | Web App          | 1 x t3.large                                     |
 | AWS EC2 | Airflow Scheduler| 1 x t3.large                                     |
+| AWS EC2 | Decompressor     | 1 x t3.large                                     |
+
 
 ## Challenges
 ### Data
@@ -68,6 +70,13 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 ```
 
 ## Instructions
+
+## Optimizations
+1. Pigz
+2. Serializer
+3. Oversubscription
+4. Partitions
+5. Spark-Submit command
 
 ## License
 

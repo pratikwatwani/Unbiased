@@ -18,12 +18,14 @@ PRAXEOLOGY POLARIZATION is a tool to serve moderators and researchers to leverag
 </br><b>GDELT:</b></br><img align ='left' src="https://maelfabien.github.io/assets/images/header.jpg" width="300"></br>
 The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.</br></br>
 
-</br><b>Wikipedia Metadata:</b></br><img align ='left' src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-top="-5%"></br></br>
+</br><b>Wikipedia Metadata:</b></br><img align ='left' src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-top="-5%">  
+
 Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article.</br></br>
 
 
+
 ## Pipeline Architecture🔗
-<img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>
+<img align='center' src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png"><br/>
 
 ## Architectural Components🗜️
 | Entity  | Purpose          | Type                                             |Reason                                   |

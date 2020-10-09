@@ -15,10 +15,13 @@ PRAXEOLOGY POLARIZATION is a tool to serve moderators and researchers to leverag
 |  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/structured%20data.png" width="80" margin-right="80">    | GDELT, Global Database of Events, Language, and Tone |   <b>6+ TB</b>  |    15 minutes    |  Public S3 |
 |  <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/unstructured%20data.png" width="80" height='90' margin-right="80">     | Wikipedia Metadata                                   | <b>~500 GB</b> |      Varies      | Private S3 |
 
-</br><b>GDELT:</b></br><img src="https://maelfabien.github.io/assets/images/header.jpg" width="350"></br>
-The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.</br>
-</br><b>Wikipedia Metadata:</b></br><img src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-right="300"></br>
-Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article.</br>
+</br><b>GDELT:</b></br><img align ='left' src="https://maelfabien.github.io/assets/images/header.jpg" width="350"></br>
+The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.</br></br>
+
+</br><b>Wikipedia Metadata:</b></br><img align ='left' src="https://www.bunkered.co.uk/uploads/site/_articleBodyImage/Wikipedia-logo-1024x576.jpg" width="300" margin-top="-5%"></br></br>
+Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article.</br></br>
+
+
 ## Pipeline Architecture🔗
 <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png" align='center'><br/>
 

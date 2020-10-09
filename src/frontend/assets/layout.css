@@ -1,0 +1,50 @@
+.country-dropdown{
+    width: 15%;
+    list-style: none;
+    float:center;
+    margin:auto;
+    margin-top:5%;
+}
+
+.dateSlider{
+    width: 40%;
+    margin:auto;
+    float:center;
+}
+
+.rc-slider-track {
+    border: 5px;
+  }
+
+.rc-slider-track {
+    background-color: cyan;
+    width:500px;
+}
+
+.rc-slider-handle {
+    border:solid 6px;
+  }
+
+  .rc.slider-handle:hover {
+    border-color: rgb(1, 118, 118);
+  }
+  
+.logo{
+    height:180px;
+    width:200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instructionpanel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top:3%;
+}
+
+.country-dropdown{
+    margin-top:0%;
+}

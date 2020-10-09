@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/*
+body {
+    background-image: linear-gradient(to right,#141e30 , #243b55);
+    opacity:rgba(54, 25, 25, .00004);
+}
+
+*/
+.title{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color:black;
+    width:55%;
+    margin:auto;
+    margin-top:-5%;
+    text-transform: uppercase;
+    z-index: 100;
+
+}
+
+.tagline{
+    font-size:50px;
+    color: '#444';
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color:black;
+    margin-top:1%;
+}
+
+.subtitle{
+    color: '#444';
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color:black;
+    margin-top:-2%
+}
+
+.dateSlider{
+    color:black;
+}
+
+.country-dropdown{
+    color: '#444';
+    font-family: 'Nunito', sans-serif;
+}
+
+.instructionsmarkdown{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.instructionpanel{
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+}

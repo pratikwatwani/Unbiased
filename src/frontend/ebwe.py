@@ -23,8 +23,9 @@ app.layout = html.Div([
             html.Img(src='data:image/png;base64,{}'.format(encoded_image), className = 'logo'),
             html.H1("UNBIASED", className = 'title')
         ],className='header'),
+        html.Br(),
         html.Div([
-            html.H3(["Spatio-Temporal Event Based", html.Br(), "Wikipedia Activity"], className = 'tagline')
+            html.H3(["Spatio-Temporal Event Based Wikipedia Activity"], className = 'tagline')
         ],className='subHeader')
     ], className='mainHeader'),
     html.Div([

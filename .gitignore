@@ -6,3 +6,6 @@
 *.config
 
 #folders
+
+#temp files
+*.pyc

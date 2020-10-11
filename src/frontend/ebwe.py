@@ -3,6 +3,11 @@ import dash_core_components as dcc
 import dash_html_components as html
 import base64
 
+countries = {}
+with open('countries.txt', 'r') as f:
+    for line in f:
+        (key, val) = line.split(',')
+        countries[key] = val.split('\n')[0]
 
 external_stylesheets = ['main.css', 'layout.css']
 logo_location = 'assets/logo.png'
@@ -31,11 +36,7 @@ app.layout = html.Div([
     html.Div([
         html.Div(
             children = [dcc.Dropdown(
-            options=[
-                {'label': 'New York City', 'value': 'NYC'},
-                {'label': u'Montréal', 'value': 'MTL'},
-                {'label': 'San Francisco', 'value': 'SF'}
-            ],
+            options=[{'label': countries[key], 'value': key} for key in countries],
             searchable=True, 
             className='country-dropdown',
             placeholder="Select a country",

@@ -61,10 +61,27 @@ body {
 }
 
 .duration{
-    font-size:20px;
+    font-size:40px;
     color: '#444';
     font-family: 'Raleway', sans-serif;
     color:black;
-    margin-top:-1%;
+    margin-top:-2%;
+    text-align: center;
+}
+
+.Xmentions{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: center;
+    margin-top:-20%;
+}
+
+.numXmentions{
+    font-size:100px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:red;
     text-align: center;
 }

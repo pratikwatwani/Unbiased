@@ -49,6 +49,11 @@
     margin-left:6.1%;
     width:100%; 
 }
+
+.resultStatsLeft{
+    width:30%;
+    float:left;
+}
 /*
 .leftpane{
     background-color: black;

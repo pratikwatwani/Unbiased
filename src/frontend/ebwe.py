@@ -1,6 +1,9 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+from dash.dependencies import Input, Output
+import dash_daq as daq
+
 import base64
 
 countries = {}
@@ -36,35 +39,60 @@ app.layout = html.Div([
     html.Div([
         html.Div(
             children = [dcc.Dropdown(
-            options=[{'label': countries[key], 'value': key} for key in countries],
+            options=[{'label': countries[key], 'value': countries[key]} for key in countries],
             searchable=True, 
             className='country-dropdown',
+            id='country-dropdown',
             placeholder="Select a country",
+            clearable=True,
+            value='Afghanistan'
             ),
         html.Br(),  
         ]),
-        dcc.Slider(
-        min=30,
-        max=1825,
+        daq.Slider(
+        min=2015,
+        max=2019,
         step=None,
         marks={
-            30: {'label' :'30 Days', 'style': {'color': '#f50', 'fontFamily':'sans-serif', 'fontWeight':300}},
-            60: {'label' :'', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            90: {'label' :'', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            180: {'label' :'180 Days', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            365: {'label' :'1 Years', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            730: {'label' :'2 Years', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            1095: {'label' :'3 Years', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            1460: {'label' :'4 Years', 'style': {'color': slider_marks_color, 'fontFamily':'sans-serif', 'fontWeight':300}},
-            1825: {'label': '5 Years', 'style': {'color': '#f50', 'fontFamily':'sans-serif'}}
+            2015: {'label' :'2015', 'style': {'color': '#f50', 'fontFamily':'sans-serif', 'fontWeight':300}},
+            2016: {'label' :'2016', 'style': {'color': 'black', 'fontFamily':'sans-serif', 'fontWeight':300}},
+            2017: {'label' :'2017', 'style': {'color': 'black', 'fontFamily':'sans-serif', 'fontWeight':300}},
+            2018: {'label' :'2018', 'style': {'color': 'black', 'fontFamily':'sans-serif', 'fontWeight':300}},
+            2019: {'label' :'2019', 'style': {'color': '#f50', 'fontFamily':'sans-serif', 'fontWeight':300}} 
         },
         className='dateSlider',
-        tooltip={'placement': 'top', 'always_visible': False}
+        id='dateSlider',
+        size=450
+        #tooltip={'placement': 'top', 'always_visible': False}
+        #handleLabel={"showCurrentValue": True,"label": "VALUE"},
         )        
-    ],className='workSection')
+    ],className='workSection'),
+    html.Div([
+        html.H2(id='countryName', className='countryName'),
+        html.P(id='duration', className='duration')
+    ],className='results'),
+    html.Div([
+        html.Div([], className='resultStatsLeft'),
+        html.Div([], className='resultStatsRight')
+    ], className='resultStats')
 ], className='mainDiv')
     
+@app.callback(
+    Output(component_id='countryName', component_property='children'),
+    [Input(component_id='country-dropdown', component_property='value')]
+)
+
+def update_output_div(input_value):
+    return '{}'.format(input_value)
+    return{'display':'block'}
+
+@app.callback(
+    Output(component_id='duration', component_property='children'),
+    [Input(component_id='dateSlider', component_property='value')]
+)
+
+def update_output_div(input_value):
+    return 'Activity for the year {}'.format(input_value)
+
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-    marker_style = dict(color='#444', fontFamily='sans-serif', fontWeight=300)

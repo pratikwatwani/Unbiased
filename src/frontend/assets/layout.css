@@ -1,16 +1,104 @@
+.mainDiv{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top:2%;
+}
+.header{
+    margin-top:-1%;
+}
+.logo{
+    height:80px;
+    width:100px;
+    float:left;
+    margin-top:0%
+}
+
+.title{
+    width:55%;
+    float:left;
+    margin-top:1%;
+}
+
+.tagLine{
+    float:left;
+    text-align: 'left';
+    margin-top:5%;
+    margin-left:-200%;
+}
+
 .country-dropdown{
+    margin-top:0%;
     width: 15%;
     list-style: none;
     float:center;
     margin:auto;
-    margin-top:5%;
 }
 
 .dateSlider{
-    width: 40%;
+    width: 80%;
     margin:auto;
     float:center;
+    margin-top:1%;
+    margin-left:36%;
 }
+
+.subHeader{
+    margin-top:-3%;  
+    float:left;
+    margin-left:6.1%;
+    width:100%; 
+}
+/*
+.leftpane{
+    background-color: black;
+    float:left;
+   width:300px;
+}
+
+.rightpane{
+    background-color: yellow;
+    float:right;
+   width:300px;
+}
+.country-dropdown{
+    
+}
+
+
+
+.logo{
+    height:80px;
+    width:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float:left;
+    margin-top:-1%
+}
+/*
+.title{
+    width:55%;
+    margin:auto;
+    margin-top:-5%;
+    
+    float:left;
+    margin-left:-2%;
+    margin-top: -1%;
+}
+
+.tagLine{
+    margin-top:1%;
+    float:left;
+}
+.instructionpanel{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    margin-top:3%;
+}
+
 
 .rc-slider-track {
     border: 5px;
@@ -28,23 +116,4 @@
   .rc.slider-handle:hover {
     border-color: rgb(1, 118, 118);
   }
-  
-.logo{
-    height:180px;
-    width:200px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.instructionpanel{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-    margin-top:3%;
-}
-
-.country-dropdown{
-    margin-top:0%;
-}
+  */

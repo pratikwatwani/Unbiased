@@ -1,7 +1,6 @@
 .mainDiv{
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin: 0 auto;
     margin-top:2%;
 }
 .header{
@@ -31,8 +30,8 @@
     margin-top:0%;
     width: 15%;
     list-style: none;
-    float:center;
-    margin:auto;
+    margin-left:55%;
+
 }
 
 .dateSlider{
@@ -40,7 +39,7 @@
     margin:auto;
     float:center;
     margin-top:1%;
-    margin-left:36%;
+    margin-left:46%;
 }
 
 .subHeader{
@@ -53,6 +52,22 @@
 .resultStatsLeft{
     width:30%;
     float:left;
+}
+
+.resultStatsRight{
+    width:70%;
+    float:right;
+}
+
+.articleinfo{
+    color:black;
+    margin: auto;
+    width:100%;
+    height:100%;
+}
+
+.firstScore{
+    margin-top:-2%;
 }
 /*
 .leftpane{

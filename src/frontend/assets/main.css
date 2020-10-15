@@ -1,28 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Merriweather:wght@900&display=swap');
 
 body {
-    /*background-image: linear-gradient(to right,#4568dc , #b06ab3);*/
+    /*background-image: linear-gradient(to right,#000428 , #004e92);*/
     opacity:rgba(54, 25, 25, .00004);
 }
 
 .title{
     font-size:50px;
     color: '#444';
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 300;
+    font-family: 'Hind', sans-serif;
+    font-weight: 900;
     color:black;
     text-transform: uppercase;
     z-index: 100;
+    margin-top:-0.5%;
 
 }
 
 .tagline{
     font-size:20px;
     color: '#444';
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Hind', sans-serif;
     color:black;
+    margin-left:1.5%;
+    margin-top:-0.5%; 
     
 }
 
@@ -58,6 +63,7 @@ body {
     font-family: 'Raleway', sans-serif;
     color:black;
     text-align: center;
+    margin-left:25%;
 }
 
 .duration{
@@ -67,6 +73,7 @@ body {
     color:black;
     margin-top:-2%;
     text-align: center;
+    margin-left:25%;
 }
 
 .Xmentions{
@@ -79,9 +86,145 @@ body {
 }
 
 .numXmentions{
+    font-size:80px;
+    line-height:150%;
+    color: '#444';
+    font-family: 'Merriweather', serif;
+    color:#ff5252;
+    text-align: center;
+    font-weight: 500;
+    margin-top:-10%;
+}
+.resultStatsRight{
+    margin-left:1%;
+    margin-right:-10%;
+}
+.avgscore{
     font-size:100px;
     color: '#444';
-    font-family: 'Raleway', sans-serif;
-    color:red;
+    font-family: 'Merriweather', serif;
+    color:#aa00ff;
     text-align: center;
+    
+}
+.xavgscore{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: center;
+    margin-top:-15%;
+}
+
+.firstResult{
+    margin-top:-5%;
+}
+.first{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: left;
+}
+
+.firstScore{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:#7a7cff;
+    margin-top:-12%;
+    margin-left:100%;
+}
+.editHolder{
+    font-size:30px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    float:right;
+    margin-right:-15%;
+    margin-top:-5%;
+
+}
+
+
+.secondResult{
+    margin-top:-5%;
+}
+.second{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: left;
+}
+
+.secondScore{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:#7a7cff;
+    margin-left:100%;
+    margin-top:-12%;
+}
+
+.thirdResult{
+    margin-top:-5%;
+}
+.third{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: left;
+    
+
+}
+.thirdScore{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:#7a7cff;
+    margin-left:100%;
+    margin-top:-12%;
+}
+
+.fourthResult{
+    margin-top:5%;
+}
+.fourth{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: left;
+    margin-top:-5%;
+
+}
+.fourthScore{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:#7a7cff;
+    margin-left:100%;
+    margin-top:-12%;
+}
+
+.fifthResult{
+    margin-top:5%;
+}
+.fifth{
+    font-size:40px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    text-align: left;
+    margin-top:-5%;
+}
+.fifthScore{
+    font-size:60px;
+    color: '#444';
+    font-family: 'Raleway', sans-serif;
+    color:#7a7cff;
+    margin-left:100%;
+    margin-top:-12%;
 }

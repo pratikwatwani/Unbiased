@@ -1,0 +1,12 @@
+dash==1.16.2
+dash-core-components==1.12.1
+dash-daq==0.5.0
+dash-extensions==0.0.31
+dash-html-components==1.1.1
+dash-renderer==1.8.2
+dash-table==4.10.1
+Flask==1.1.2
+Flask-Caching==1.9.0
+Flask-Compress==1.5.0
+pandas
+plotly==4.11.0

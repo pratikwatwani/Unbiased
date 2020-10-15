@@ -19,7 +19,7 @@ The question is, **Do global events lead to influence in edits of Wikipedia arti
 **GDELT:**    
 
 <img align ='left' src="https://maelfabien.github.io/assets/images/header.jpg" width="300">
-The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.<br><br>
+The GDELT Project monitors the world's broadcast, print, and web news from nearly every corner of every country in over 100 languages and identifies the people, locations, organizations, themes, sources, emotions, counts, quotes, images and events driving our global society every second of every day, creating a free open platform for computing on the entire world.<br><br><br><br>
 
 
 
@@ -44,16 +44,15 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 
 ## Challenges🤕
 ### Data
-1. Handling compressed files
-2. Semi-Structured Data (XML)
-
-### Engineering
-1. Database memory optimization
-2. Joining data
-3. Distributed database design with Chunking
+1. Splitting, keyword generation and binning. 
+2. Fuzzy pattern matching. 
+3. Data Modeling 
+4. Query processing optimization.
 
 ### Architectural 
-1. Storage - Processing Cluster - Database Cluster connection
+1. Database parameter optimization.
+2. PySpark tuning.
+
 
 ## Directory Structure🗂️
 ```bash

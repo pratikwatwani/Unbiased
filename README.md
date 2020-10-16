@@ -53,26 +53,54 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 1. Database parameter optimization.
 2. PySpark tuning.
 
+## UI🖥
+<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%201.png" width ="900px" height="500px"></p></br>
+<p align ='center'>___________________________________________________</p>
+<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%202.png" width ="900px" height="500px"></p></br>
+<p align ='center'>___________________________________________________</p>
+<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%203.png" width ="900px" height="500px"></p></br>
 
 ## Directory Structure🗂️
 ```bash
 
-│  src
-│   │ 
-│   ├── scraper
-│   │     ├── scraper.py
-│   │     ├── lists
-│   │           ├── current_urls.txt
-│   │           ├── historic_urls.txt
-│   │     ├── runScrapper.sh
-│   ├── dataingestion
-│   │     ├── ingester.py
-│   │     ├── runIngester.sh
-│   ├── processor
-│   ├── 
-│   │   ├── 
-│   └── 
-├── 
+
+├── assets
+│     ├── logo.png
+│     ├── pipeline.png
+│     ├── dataingestion
+│     ├── dataingestion
+│
+├── src
+│     │ 
+│     ├── dataingestion
+│     │     ├── scraper.py
+│     │     ├── linkGenerator.py
+│     │     ├── fileWriter.py
+│     │     ├── lists
+│     │           ├── current_urls.txt
+│     │           ├── historic_urls.txt
+│     │     ├── runScrapper.sh
+│     │
+│     ├── processor
+│     │     ├── dbWriter.py
+│     │     ├── wikiScraper.py
+│     │     ├── gdeltProc.py
+│     │     ├── gdeltS
+│     │           ├── 
+│     │     ├── wikiS
+│     │           ├── metaProcessor.py
+│     │           ├── tableProcessor.py
+│     │
+│     └── frontend
+│           ├── __init__.py
+│           ├── application.py
+│           ├── dataFetch.py
+│           ├── requirements.txt
+│           ├── assets
+│                 ├── layout.css
+│                 ├── main.css
+│                 ├── logo.png
+├── License.md
 ├── README.md
 └── .gitignore
 ```

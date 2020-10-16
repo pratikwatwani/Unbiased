@@ -1,3 +1,4 @@
+[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python) 
 <p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></kbd></p>
 
 # <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
@@ -35,7 +36,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 | Entity  | Purpose          | Type                                             |Reason                                   |
 |---------|------------------|--------------------------------------------------|-----------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
-| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |
+| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |!
 | AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
 | AWS EC2 | Web App          | 1 x t3.large                                     |
 | AWS EC2 | Airflow Scheduler| 1 x t3.large                                     |

@@ -1,13 +1,24 @@
 import psycopg2
 import pandas as pd
+import configparser
+import os.path as path
 
+filepath =  path.abspath(path.join(__file__ ,"../../.."))+'/config.ini'
+config = configparser.ConfigParser()
+config.read(filepath)
+
+user = config.get('db','user')
+password = config.get('db','password')
+hostIP = config.get('db','hostIP')
+database = config.get('db','database')
+port = config.get('db','port')
 
 conn = psycopg2.connect(
-            dbname='ebwe',
-            user="admin",
-            password="admin",
-            host="ec2-3-210-212-233.compute-1.amazonaws.com",
-            port='5321'
+            dbname=database,
+            user=user,
+            password=password,
+            host=hostIP,
+            port=port
         )
 
 cur = conn.cursor()

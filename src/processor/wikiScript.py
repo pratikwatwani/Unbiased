@@ -10,8 +10,8 @@ from pyspark.sql.functions import *
 import configparser
 import os.path as path
 
-from tableProcessor import tableProcessor
-from metaProcessor import metaProcessor
+from wikiModules.tableProcessor import tableProcessor
+from wikiModules.metaProcessor import metaProcessor
 from dbWriter import dbWriter
 
 

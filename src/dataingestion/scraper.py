@@ -6,7 +6,7 @@ from datetime import datetime
 import logging
 import time
 
-from linkGenerator import *
+from scraperModules.linkGenerator import *
 
 
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)

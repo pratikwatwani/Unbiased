@@ -6,7 +6,7 @@ import dash_daq as daq
 import base64
 import pandas as pd
 
-from dataFetch import dataFetch
+from appModules.dataFetch import dataFetch
 
 
 countries = {}

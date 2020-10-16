@@ -1,7 +1,7 @@
-<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></p>
+<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></kbd></p>
 
 # <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
-### <h3 align="center">[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)&nbsp;&nbsp;&nbsp;[Demo](https://www.unbiaswiki.me)</h3>
+### <h2 align="center"><kbd>[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)</kbd>&nbsp;&nbsp;&nbsp;<kbd>[Demo](https://www.unbiaswiki.me)</kbd></h2>
 ## Motivation🚀 
 Every day there are thousands of notable transactions over the globe; protests, market dips, terrorist attacks, etc. 
 
@@ -29,7 +29,7 @@ The GDELT Project monitors the world's broadcast, print, and web news from nearl
 Historical and Current dump of English Wikipedia consisting metadata including edits, commits, messages, userids', timestamp of each edit on the wikipedia article. <br> <br> <br><br> <br> <br>       
 
 ## Pipeline Architecture🔗
-<img align='center' src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png"><br/>
+<kbd><img align='center' src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png"></kbd><br/>
 
 ## Architectural Components🗜️
 | Entity  | Purpose          | Type                                             |Reason                                   |
@@ -54,47 +54,58 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 2. PySpark tuning.
 
 ## UI🖥
-<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%201.png" width ="900px" height="500px"></p></br>
-<p align ='center'>___________________________________________________</p>
-<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%202.png" width ="900px" height="500px"></p></br>
-<p align ='center'>___________________________________________________</p>
-<p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%203.png" width ="900px" height="500px"></p></br>
+<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%201.png" width ="900px" height="400px"></kbd></p></br>
+----
+<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%202.png" width ="900px" height="400px"></kbd></p></br>
+----
+<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%203.png" width ="900px" height="400px"></kbd></p></br>
 
 ## Directory Structure🗂️
 ```bash
-
-
+/
+│
 ├── assets
 │     ├── logo.png
 │     ├── pipeline.png
 │     ├── dataingestion
 │     ├── dataingestion
 │
-├── src
+├──  src
 │     │ 
 │     ├── dataingestion
 │     │     ├── scraper.py
-│     │     ├── linkGenerator.py
-│     │     ├── fileWriter.py
+│     │     ├── scraperModules
+│     │     │      ├── __init__.py 
+│     │     │      ├── linkGenerator.py
+│     │     │      ├── fileWriter.py
 │     │     ├── lists
-│     │           ├── current_urls.txt
-│     │           ├── historic_urls.txt
+│     │     │      ├── current_urls.txt
+│     │     │      ├── historic_urls.txt
 │     │     ├── runScrapper.sh
 │     │
 │     ├── processor
 │     │     ├── dbWriter.py
 │     │     ├── wikiScraper.py
 │     │     ├── gdeltProc.py
-│     │     ├── gdeltS
-│     │           ├── 
-│     │     ├── wikiS
-│     │           ├── metaProcessor.py
-│     │           ├── tableProcessor.py
+│     │     ├── gdeltModules
+│     │     │      ├── __init__.py
+│     │     │      ├── eventsProcessor.py
+│     │     │      ├── geographiesProcessor.py
+│     │     │      ├── mentionsProcessor.py
+│     │     │      ├── typeCaster.py
+│     │     ├── wikiModules
+│     │     │      ├── __init__.py
+│     │     │      ├── metaProcessor.py
+│     │     │      ├── tableProcessor.py
+│     │     ├── gdelt_run.sh
+│     │     ├── wiki_run.sh
 │     │
 │     └── frontend
 │           ├── __init__.py
 │           ├── application.py
-│           ├── dataFetch.py
+│           ├── appModules
+│           │        ├── __init__.py
+│           │        ├── dataFetch.py
 │           ├── requirements.txt
 │           ├── assets
 │                 ├── layout.css

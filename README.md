@@ -1,4 +1,5 @@
-[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python) 
+[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+
 <p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></kbd></p>
 
 # <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>

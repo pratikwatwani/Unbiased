@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></p>
 
 # <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
-### <h3 align="center">[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)&nbsp;&nbsp;&nbsp;[Demo](unbiaswiki.me)</h3>
+### <h3 align="center">[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)&nbsp;&nbsp;&nbsp;[Demo](https://www.unbiaswiki.me)</h3>
 ## Motivation🚀 
 Every day there are thousands of notable transactions over the globe; protests, market dips, terrorist attacks, etc. 
 

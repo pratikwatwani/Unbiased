@@ -1,11 +1,8 @@
 # hidden files
 .DS_Store
 
-#config files
-*.ini
-*.config
-
 #folders
+test/
 
 #temp files
 *.pyc

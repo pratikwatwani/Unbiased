@@ -56,11 +56,10 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 | Entity  | Purpose          | Type                                             |
 |---------|------------------|--------------------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
-| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |
+| AWS EC2 | Spark Cluster,<br>Decompressor| Master - 1 x m5a.large<br>Worker - 5 x m5a.large |
 | AWS EC2 | TimescaleDB      | 1 x m5.xlarge                                    |
 | AWS EC2 | Web App          | 1 x t3.large                                     |
-| AWS EC2 | Airflow Scheduler| 1 x t3.large                                     |
-| AWS EC2 | Decompressor     | 1 x t3.large                                     |
+| AWS EC2 | Airflow Scheduler| 1 x m5.large                                     |
 
 
 ## Challenges🤕

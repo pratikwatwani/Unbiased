@@ -1,9 +1,17 @@
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Py) 
-[![flask](https://img.shields.io/badge/flask-v1.1.1-blue)](https://github.com/topics/flask) 
-[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python)
-[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) 
+[![python](https://img.shields.io/badge/python-v3.6%20%7C%20%20v3.7-blue/?logo=python)](https://wwww.python.org)
+[![java](https://img.shields.io/badge/java-1.8.0-blue/?logo=java)](https://www.java.com/en/download/)
+[![Scala](https://img.shields.io/badge/scala-v2.11-blue/?logo=scala)](https://github.com/scala/scala)
+[![Spark](https://img.shields.io/badge/spark-v2.4-blue/?logo=apache)](https://github.com/apache/spark)
+[![flask](https://img.shields.io/badge/flask-v1.1.1-blue/?logo=flask)](https://github.com/topics/flask)
+[![postgres](https://img.shields.io/badge/postgres-12-blue/?logo=postgresql)](https://github.com/postgres/postgres)
+[![timescaledb](https://img.shields.io/badge/timescaledb-1.7-blue/?logo=postgresql)](https://github.com/timescale/timescaledb)
+[![psycopg2](https://img.shields.io/badge/psycopg2-2.8.6-blue/?logo=python)](https://github.com/psycopg/psycopg2)
+[![dash](https://img.shields.io/badge/dash-1.16-blue/?logo=dash)](https://github.com/plotly/dash)
+[![AWS](https://img.shields.io/badge/aws-1.18.147-blue/?logo=amazon)](https://aws.amazon.com/)
+[![website](https://img.shields.io/badge/website-up-brightgreen)](https://www.unbiaswiki.me)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pratikwatwani/Unbiased/issues) 
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) 
 
 <p align="center">
   <kbd>

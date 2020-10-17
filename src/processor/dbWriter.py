@@ -27,7 +27,7 @@ def dbWriter(dataframe, table):
             "batchsize": "1000000"
             }
 
-    port = 
+
     url = "jdbc:postgresql://{0}:{1}/{2}".format(hostIP, port, database)
 
     df.write.jdbc(url=url, table=dbtable, mode='append', properties=properties)

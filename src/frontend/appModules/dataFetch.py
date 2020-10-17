@@ -1,47 +1,13 @@
 import psycopg2
 import pandas as pd
-import configparser
-import os.path as path
 
-filepath =  path.abspath(path.join(__file__ ,"../../.."))+'/config.ini'
-config = configparser.ConfigParser()
-config.read(filepath)
+from dbConnection import conEstablisher
 
-user = config.get('db','user')
-password = config.get('db','password')
-hostIP = config.get('db','hostIP')
-database = config.get('db','database')
-port = config.get('db','port')
+cur = conEstablisher()
 
-conn = psycopg2.connect(
-            dbname=database,
-            user=user,
-            password=password,
-            host=hostIP,
-            port=port
-        )
+scoreQuery = open('scoreQuery.sql','r').read()
 
-cur = conn.cursor()
-
-scoreQuery ='''select sum(nummentions), avg(avgtone) from eventsXgeog 
-                where actor1geo_fullname = '{0}' 
-                or actor2geo_fullname= '{0}' and 
-                extract(year from dateadded)={1};
-            '''
-
-articleQuery='''select title, count from wiki 
-                where title like concat('%', (select actor1name from (select 
-                actor1name, nummentions from eventsxgeog where 
-                actor1geo_fullname='{0}'   and 
-                extract(year from dateadded) = {1} 
-                union all
-                select 
-                actor1name, nummentions from eventsxgeog where 
-                actor2geo_fullname = '{0}'  and 
-                extract(year from dateadded) = {1} 
-                order by nummentions desc limit 1)as stats),'%') 
-                and year = {1} order by count desc limit 5
-            '''
+articleQuery = open('articleQuery.sql','r').read()
 
 def dataFetch(country, year, code):
     """This function returns the result of the called query as a dataframe to the main application file

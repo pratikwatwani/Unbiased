@@ -1,4 +1,4 @@
-[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python) [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Py) [![flask](https://img.shields.io/badge/flask-v1.1.1-blue)](https://github.com/topics/flask) [![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python)  [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pratikwatwani/Unbiased/issues) [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 
 <p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></kbd></p>
 
@@ -34,11 +34,11 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 <kbd><img align='center' src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/pipeline.png"></kbd><br/>
 
 ## Architectural Components🗜️
-| Entity  | Purpose          | Type                                             |Reason                                   |
-|---------|------------------|--------------------------------------------------|-----------------------------------------|
+| Entity  | Purpose          | Type                                             |
+|---------|------------------|--------------------------------------------------|
 | AWS S3  | Raw Data Storage | -                                                |
-| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |!
-| AWS EC2 | TimescaleDB      | 1 x r5a.large                                    |
+| AWS EC2 | Spark Cluster    | Master - 1 x m5a.large<br>Worker - 5 x m5a.large |
+| AWS EC2 | TimescaleDB      | 1 x m5.xlarge                                    |
 | AWS EC2 | Web App          | 1 x t3.large                                     |
 | AWS EC2 | Airflow Scheduler| 1 x t3.large                                     |
 | AWS EC2 | Decompressor     | 1 x t3.large                                     |
@@ -70,7 +70,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 │     ├── logo.png
 │     ├── pipeline.png
 │     ├── dataingestion
-│     ├── dataingestion
+│     └── dataingestion
 │
 ├──  src
 │     │ 
@@ -82,8 +82,8 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 │     │     │      ├── fileWriter.py
 │     │     ├── lists
 │     │     │      ├── current_urls.txt
-│     │     │      ├── historic_urls.txt
-│     │     ├── runScrapper.sh
+│     │     │      └── historic_urls.txt
+│     │     └── runScrapper.sh
 │     │
 │     ├── processor
 │     │     ├── dbWriter.py
@@ -94,25 +94,29 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 │     │     │      ├── eventsProcessor.py
 │     │     │      ├── geographiesProcessor.py
 │     │     │      ├── mentionsProcessor.py
-│     │     │      ├── typeCaster.py
+│     │     │      └── typeCaster.py
 │     │     ├── wikiModules
 │     │     │      ├── __init__.py
 │     │     │      ├── metaProcessor.py
-│     │     │      ├── tableProcessor.py
+│     │     │      └── tableProcessor.py
 │     │     ├── gdelt_run.sh
-│     │     ├── wiki_run.sh
+│     │     └── wiki_run.sh
 │     │
-│     └── frontend
-│           ├── __init__.py
-│           ├── application.py
-│           ├── appModules
-│           │        ├── __init__.py
-│           │        ├── dataFetch.py
-│           ├── requirements.txt
-│           ├── assets
-│                 ├── layout.css
-│                 ├── main.css
-│                 ├── logo.png
+│     ├── frontend
+│     │     ├── __init__.py
+│     │     ├── application.py
+│     │     ├── appModules
+│     │     │      ├── __init__.py
+│     │     │      └── dataFetch.py
+│     │     ├── requirements.txt
+│     │     └── assets
+│     │            ├── layout.css
+│     │            ├── main.css
+│     │            └── logo.png
+│     │
+│     └── airflow
+│           ├── dag.py
+│
 ├── License.md
 ├── README.md
 └── .gitignore

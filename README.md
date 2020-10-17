@@ -1,9 +1,20 @@
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Py) [![flask](https://img.shields.io/badge/flask-v1.1.1-blue)](https://github.com/topics/flask) [![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python)  [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pratikwatwani/Unbiased/issues) [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Py) 
+[![flask](https://img.shields.io/badge/flask-v1.1.1-blue)](https://github.com/topics/flask) 
+[![python](https://img.shields.io/badge/website-up-brightgreen)](https://github.com/topics/python)
+[![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pratikwatwani/Unbiased/issues) 
+[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 
-<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px></kbd></p>
+<p align="center">
+  <kbd>
+    <img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/logo.png" width="250" height="200" margin-right=500px>
+  </kbd>
+</p>
 
 # <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
+
 ### <h2 align="center"><kbd>[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)</kbd>&nbsp;&nbsp;&nbsp;<kbd>[Demo](https://www.unbiaswiki.me)</kbd></h2>
+
 ## Motivation🚀 
 Every day there are thousands of notable transactions over the globe; protests, market dips, terrorist attacks, etc. 
 
@@ -85,6 +96,9 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 │     │     │      └── historic_urls.txt
 │     │     └── runScrapper.sh
 │     │
+│     ├── decompressor  
+│     │     └── decompressor.sh
+│     │
 │     ├── processor
 │     │     ├── dbWriter.py
 │     │     ├── wikiScraper.py
@@ -107,29 +121,37 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 │     │     ├── application.py
 │     │     ├── appModules
 │     │     │      ├── __init__.py
+│     │     │      ├── dbConnection.py
 │     │     │      └── dataFetch.py
 │     │     ├── requirements.txt
+│     │     ├── queries
+│     │     │      ├── articleQuery.sql
+│     │     │      └── scoreQuery.sql
 │     │     └── assets
 │     │            ├── layout.css
 │     │            ├── main.css
 │     │            └── logo.png
 │     │
 │     └── airflow
-│           ├── dag.py
+│           └── dag.py
 │
 ├── License.md
 ├── README.md
+├── config.ini
 └── .gitignore
 ```
 
 ## Instructions📝
 
 ## Optimizations⚙️
-1. Pigz
-2. Serializer
-3. Oversubscription
-4. Partitions
-5. Spark-Submit command
+1. Unpigz
+2. Data Modeling
+3. Query optimization
+4. Database parameters
+5. Serializing
+6. Oversubscription
+7. Partitioning
+8. Spark-Submit 
 
 ## License🔑
 

@@ -74,11 +74,11 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 2. PySpark tuning.
 
 ## UI🖥
-<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%201.png" width ="900px" height="400px"></kbd></p></br>
-----
-<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%202.png" width ="900px" height="400px"></kbd></p></br>
-----
-<p align="center"><kbd><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%203.png" width ="900px" height="400px"></kbd></p></br>
+> <p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%201.png" width ="900px" height="400px"></p></br>
+
+> <p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%202.png" width ="900px" height="400px"></p></br>
+
+> <p align="center"><img src="https://github.com/pratikwatwani/Event-Based-Influence-on-Wikipedia/blob/master/assets/UI/UI%203.png" width ="900px" height="400px"></p></br>
 
 ## Directory Structure🗂️
 ```bash

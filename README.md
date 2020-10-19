@@ -19,7 +19,8 @@
   </kbd>
 </p>
 
-# <h1 align="center">UNBIASED</br>Spatio Temporal Event Based Influence on Wikipedia Edits</h1>
+# <h1 align="center">UNBIASED</h1>    
+# <h2 align="center">Spatio Temporal Event Based Influence on Wikipedia Edits</h2>
 
 ### <h2 align="center"><kbd>[Presentation](https://docs.google.com/presentation/d/1CPY6hL6gpJWHJdGLeQp7smaeLmAUaLXKfNtiZ5eszwU/edit?usp=sharing)</kbd>&nbsp;&nbsp;&nbsp;<kbd>[Demo](https://www.unbiaswiki.me)</kbd></h2>
 

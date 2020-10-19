@@ -150,14 +150,14 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 
 ## Instructions📝
 ### Setup
-1. Setup AWS Cluster
+1. **Setup AWS Cluster**
 
    Follow instructions below, link by link to setup a cluster and spin up instances as mentioned above in Architectural Components
    
    a. https://blog.insightdatascience.com/simply-install-spark-cluster-mode-341843a52b88    
    b. https://blog.insightdatascience.com/how-to-access-s3-data-from-spark-74e40e0b2231
    
-2. Setup TimescaleDB
+2. **Setup TimescaleDB**
 
    Follow instructions from official blog of TimescaleDB    
    https://blog.timescale.com/tutorials/tutorial-installing-timescaledb-on-aws-c8602b767a98/
@@ -168,7 +168,7 @@ Historical and Current dump of English Wikipedia consisting metadata including e
    Use this website to optimize databse capabilities     
    https://pgtune.leopard.in.ua/#/
  
-3. Setup frontend framework
+3. **Setup frontend framework**
 
    Follow this guide from Digital Ocean:
    
@@ -180,12 +180,25 @@ Historical and Current dump of English Wikipedia consisting metadata including e
       ii. These instructions are applicable to the underlying flask app. To expose the underlying Flask app, put server = app.server at the top of your main Dash script. Now, substitute `server` for `app` in the instructions. Otherwise you will get errors saying the app is not callable.      
       iii.When you go to deploy the app, if you made a file/sim link for your domain in `/etc/nginx/sites-available/` and in `/etc/nginx/sites-enabled/`, this may now conflict with the new files you made. Get rid of the original files. 
 
-4. Setup Airflow    
+4. **Setup Airflow**    
   Setup Airflow as per instructions from this Medium Blog:       
    https://blog.insightdatascience.com/scheduling-spark-jobs-with-airflow-4c66f3144660
    
 ### Code Execution 
-
+1. **Scraping**   
+   `sh src/dataingestion`   
+   `sh dataingestion/scraper.sh`    
+2. **Decompression**   
+    `cd src/decompression`    
+    `sh decompressor.sh`    
+3. **Processor**    
+    `cd src/processor`    
+    `sh gdelt_run.sh`    
+    `sh wiki_run.sh`    
+4. **Dashboard**    
+    `cd src/frontend`    
+    `python application.py`
+    
 ## Optimizations⚙️
 1. Unpigz
 2. Data Modeling

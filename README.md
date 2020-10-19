@@ -149,6 +149,42 @@ Historical and Current dump of English Wikipedia consisting metadata including e
 ```
 
 ## Instructions📝
+### Setup
+1. Setup AWS Cluster
+
+   Follow instructions below, link by link to setup a cluster and spin up instances as mentioned above in Architectural Components
+   
+   a. https://blog.insightdatascience.com/simply-install-spark-cluster-mode-341843a52b88    
+   b. https://blog.insightdatascience.com/how-to-access-s3-data-from-spark-74e40e0b2231
+   
+2. Setup TimescaleDB
+
+   Follow instructions from official blog of TimescaleDB    
+   https://blog.timescale.com/tutorials/tutorial-installing-timescaledb-on-aws-c8602b767a98/
+   
+   Follow this video to setup connection to cluster    
+   https://www.youtube.com/watch?v=5dYeYIWaXjc&feature=youtu.be
+   
+   Use this website to optimize databse capabilities     
+   https://pgtune.leopard.in.ua/#/
+ 
+3. Setup frontend framework
+
+   Follow this guide from Digital Ocean:
+   
+   a. https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04    
+      i. Be sure to do sudo ufw allow for SSH as well when you get to that step, or you will not be able to SSH into your instance!    
+      ii.When my ufw status is listed as inactive, it fixed it to run sudo ufw enable    
+   b. https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-18-04    
+      i.  The normal port for Dash is 8080, not 5000    
+      ii. These instructions are applicable to the underlying flask app. To expose the underlying Flask app, put server = app.server at the top of your main Dash script. Now, substitute `server` for `app` in the instructions. Otherwise you will get errors saying the app is not callable.      
+      iii.When you go to deploy the app, if you made a file/sim link for your domain in `/etc/nginx/sites-available/` and in `/etc/nginx/sites-enabled/`, this may now conflict with the new files you made. Get rid of the original files. 
+
+4. Setup Airflow    
+  Setup Airflow as per instructions from this Medium Blog:       
+   https://blog.insightdatascience.com/scheduling-spark-jobs-with-airflow-4c66f3144660
+   
+### Code Execution 
 
 ## Optimizations⚙️
 1. Unpigz

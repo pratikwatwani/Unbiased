@@ -8,7 +8,7 @@
 [![psycopg2](https://img.shields.io/badge/psycopg2-2.8.6-blue/?logo=python)](https://github.com/psycopg/psycopg2)
 [![dash](https://img.shields.io/badge/dash-1.16-blue/?logo=dash)](https://github.com/plotly/dash)
 [![AWS](https://img.shields.io/badge/aws-1.18.147-blue/?logo=amazon)](https://aws.amazon.com/)
-[![website](https://img.shields.io/badge/website-up-brightgreen)](https://www.unbiaswiki.me)
+[![website](https://img.shields.io/badge/website-down-red)](https://www.unbiaswiki.me)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/pratikwatwani/Unbiased/issues) 
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/) 

@@ -30,7 +30,7 @@ decompressor = BashOperator(
 )
 
 direcotry = 'src/processor'
-wikiprocessor = BashOperator(
+wikiProcessor = BashOperator(
     task_id = 'wikiFileProcessor',
     bash_command = 'sh wiki_run.sh',
     dag = dag
@@ -42,3 +42,4 @@ gdeltProcessor = BashOperator(
     dag = dag
 )
 
+scraper >> decompressor >> wikiProcessor >> gdeltProcessor
